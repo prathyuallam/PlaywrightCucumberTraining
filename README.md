@@ -16,6 +16,16 @@ This project was created solely for my learning process and to showcase my testi
   - `npm i @cucumber/cucumber -D`
   - `npm i ts-node -D`
 - Create folder `src/test/features` and `src/test/steps`
+
+
+
+- Make Sure @playwright/test is Installed
+npm install -D @playwright/test
+
+- Restart TypeScript Server (in VS Code)
+ Open Command Palette (Ctrl + Shift + P)
+TypeScript: Restart TS server
+
 - Install ESLint `npm install eslint --save-dev`
 - Configuration `npm init @eslint/config`
 - Add prettier in `.eslintrc.json` :
@@ -40,3 +50,16 @@ README.md
 ```
 - Run formatting with Prettier `npx prettier --write .`
 - Linking Prettier with ESLint `npm install --save-dev eslint-config-prettier`
+
+
+- How to Run Cucumber Tests
+npx cucumber-js
+
+- Run Tests by Tag from Command Line
+npx cucumber-js --tags "@smoke"
+
+
+- Run the tests + generate report:
+
+npx cucumber-js --format json:reports/report.json
+node generate-report.js
